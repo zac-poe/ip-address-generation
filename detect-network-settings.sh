@@ -1,14 +1,10 @@
-#!/bin/sh
 #
-# This script detect the active network settings and make the following variables available:
-#    $ips_current_device
-#    $ips_current_address
-#    $ips_dns_server
-#    $ips_subnet_mask
-#    $ips_subnet_mask_prefix
-#
-# Limitations:
-#    Due to the OS specific nature of ifconfig, this script presently only supports MAC
+# when imported, this script will assign the following variables:
+#     $ips_current_device
+#     $ips_current_address
+#     $ips_dns_server
+#     $ips_subnet_mask
+#     $ips_subnet_mask_prefix
 #
 
 echo "Detecting current network settings..."
@@ -77,9 +73,3 @@ while [ 1 ]; do
         5) ips_dns_server="$val";;
     esac
 done
-
-export ips_current_device
-export ips_current_address
-export ips_dns_server
-export ips_subnet_mask
-export ips_subnet_mask_prefix
