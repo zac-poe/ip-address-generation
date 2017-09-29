@@ -1,5 +1,5 @@
 # Overview
-The purposes of these scripts are to generate additional IP addresses on a local machine. These IP addresses can be used for spoofing multiple hosts for tasks like performance load testing.
+The purposes of these scripts are to generate additional IP addresses on a local machine. These IP addresses can be used for tasks where multiple requesters are required, such as performance load testing.
 
 Note that usage of multiple IP addresses on a single machine may require temporarily disabling any local Firewalls. These are commonly part of antivirus suites.
 
