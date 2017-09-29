@@ -3,7 +3,7 @@ The purposes of these scripts are to generate additional IP addresses on a local
 
 *Due to the OS specific nature of ifconfig, which is used by these scripts, presently only MAC OS is supported*
 
-Note that usage of this script will disable DHCP on your active network connection. You may wish to re-enable this after use of these IP addresses is complete.
-
 # Usage
-`sudo ./generate-ip-addresses.sh` : Run the IP Address generation wizard
+`sudo ./generate-ip-addresses.sh` : Run the IP address generation wizard
+
+`sudo ./remove-ip-addresses.sh` : Run the IP address removal wizard

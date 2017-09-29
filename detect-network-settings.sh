@@ -10,7 +10,7 @@
 echo "Detecting current network settings..."
 
 device_detail="$(ifconfig \
-    | grep 'inet.*broadcast.*255$' -m 1 -B 10)"
+    | grep 'inet.*broadcast.*255$' -m 1 -B -1)"
 ips_dns_server="$(netstat -rn \
     | grep -i 'default' -m 1 \
     | sed 's/^[^0-9]*\([0-9.]*\).*/\1/')"

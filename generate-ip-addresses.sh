@@ -23,7 +23,7 @@ while [[ $(echo $num | grep -c "^[0-9]\+$") -le 0 || $num -eq 0 ]]; do
     read num
 done
 
-addr_file="generated-ip-addresses-$(date '+%Y%m%d-%H%M%S').csv"
+addr_file="generated-ip-addresses-$(date '+%Y%m%d-%H%M%S').txt"
 
 printf "\nCreating IP addresses..."
 i=1
