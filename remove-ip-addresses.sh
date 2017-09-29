@@ -44,7 +44,7 @@ printf "\nRemoving addresses..."
     || cat "${files[$(($sel-2))]}") \
 | while read addr; do
     printf '.'
-    ifconfig $ips_current_device -alias $addr
+    ifconfig $ips_current_device delete $addr
 done
 
 echo "\n\nAddress removal complete!"
