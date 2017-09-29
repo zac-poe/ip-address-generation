@@ -28,7 +28,7 @@ addr_file="generated-ip-addresses-$(date '+%Y%m%d-%H%M%S').txt"
 printf "\nCreating IP addresses..."
 i=1
 count=0
-while [[ $count -le $num || $i -le 255 ]]; do
+while [[ $count -lt $num && $i -le 255 ]]; do
     printf '.'
     addr="$ips_subnet_mask_prefix.$i"
     ping $addr -o -t 1 > /dev/null 2>&1
