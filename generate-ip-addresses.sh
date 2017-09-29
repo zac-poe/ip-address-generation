@@ -33,7 +33,7 @@ while [[ $count -lt $num && $i -le 255 ]]; do
     addr="$ips_subnet_mask_prefix.$i"
     ping $addr -o -t 1 > /dev/null 2>&1
     if [[ $? -ne 0 ]]; then
-        ifconfig $ips_current_device alias $addr $ips_subnet_mask
+        ifconfig $ips_current_device add $addr netmask $ips_subnet_mask
         echo "$addr" >> "$addr_file"
         let count=$count+1
     fi
