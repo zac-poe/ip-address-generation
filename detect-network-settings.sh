@@ -49,7 +49,7 @@ while [ 1 ]; do
 
     resp=""
     while [[ $(echo "$resp" | grep -ic '^[n|y]') -le 0 ]]; do
-        echo "Are all of these values correct? [y/n]"
+        echo "Are all of these values correct? (y/n)"
         read resp
     done
     if [[ $(echo $resp | grep -ic '^y') -gt 0 ]]; then
